@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wedding Invitation Designer</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  
+  <body>
+    
+  <header>
+    
+    <h1>Wedding Invitation Designer</h1>
+    
+  </header> 
+  
+  <main>
+   
+    
+    <div class="row">
+    <div class="column" id="form">
+     <div>  
+    <button onclick="classicStyle()" >Classic</button>
+    <button onclick="floralStyle()" >Floral</button>
+    <button onclick="parchmentStyle()">Parchment</button>
+    </div>
+    <br>
+      <form autocomplete ="off">
+         <h3>First Name:</h3>
+         <input type="text" name="firstname" placeholder="e.g. Jamie" onfocus="this.placeholder = ''" onblur="this.placeholder = 'e.g. Jamie'" id="firstname"><br>
+         
+         <h3>Second Name:</h3>
+         <input type="text" name="secondname" placeholder="e.g. Chris" onfocus="this.placeholder = ''" onblur="this.placeholder = 'e.g. Chris'" id="secondname"><br>
+         
+         <h3>Last Name:</h3>
+         <input type="text" name="lastname" placeholder="e.g. Evans" onfocus="this.placeholder = ''" onblur="this.placeholder = 'e.g. Evans'" id="lastname"><br>
+         
+         <h3>Date:</h3>
+         <input type="text" name="date" placeholder="e.g. 9th October 2019" onfocus="this.placeholder = ''" onblur="this.placeholder = 'e.g. 9th October 2019'" id="date"><br>
+         
+         <h3>Time:</h3>
+         <input type="text" name="time" placeholder="e.g. 2pm" onfocus="this.placeholder = ''" onblur="this.placeholder = 'e.g. 2pm'" id="time"><br>
+         
+         <h3>Wedding Location:</h3>
+         <input type="text" name="location" placeholder="e.g. Royal Albert Hall" onfocus="this.placeholder = ''" onblur="this.placeholder = 'e.g. Royal Albert Hall'" id="location"><br>
+        
+      </form>
+      
+    </div>
+    
+    
+    <div class="column classicdesign" id="invitation">
+      
+    
+      <img src="/images/weddingrings.svg" id="rings">
+      <br><br>
+      <h3>Join us to celebrate wedding of</h3>
+      
+       <h2><p> <span id="invitefirstname" class="capitalize"></span> & <span id="invitesecondname" class="capitalize"></span></p>
+        <p><span id="invitelastname"></span></p></h2>
+        <h3>on the</h3>
+        <h2><span id="invitedate" class="capitalize"></span></h2>
+        <h2><span id="invitetime"></span></h2>
+        <h3>at</h3>
+        <h2><span id="invitelocation" class="capitalize"></span></h2>
+        <br>
+        <h3> Reception to follow </h3>
+      
+    </div>
+    
+    </div>
+    
+  </main>
+  
+   <script src="index.js"></script> 
+  
+  </body>
+
+  
+</html>
